@@ -1,0 +1,16 @@
+html,
+body,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+:root {
+  /*in the root of the project (html/body), we are going to define smth (colors) */
+  --light-blue: #2998ff;
+}
+.hero {
+  background-color: var(--light-blue);
+}
