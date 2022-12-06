@@ -56,3 +56,6 @@ h5 {
 body {
   background-color: var(--primary);
 }
+.btn {
+  font-size: var(--h3);
+}
