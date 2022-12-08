@@ -255,5 +255,5 @@ const cardArr = [
 
 export { cardArr };
 
-/*blue: spline, smite, ion, winter wunderland, avalanche, silvanus, ruination (maybe), snowfall, abyssal --> 42*/
+/*blue: spline, smite, winter wunderland, avalanche, silvanus, snowfall, abyssal --> 42*/
 /*purple: singularity, prism, nebula, valorant go, undercity, hue shift, reaver*/

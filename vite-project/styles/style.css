@@ -1,4 +1,3 @@
-@import url(variables.css);
 html,
 body,
 * {
@@ -6,19 +5,20 @@ body,
   font-size: 62.5%;
   padding: 0;
   margin: 0;
+  font-family: "Bitter", serif;
 }
 :root {
   /*in the root of the project (html/body), we are going to define smth (colors) */
   --black: #000;
-  --light-blue: #2998ff;
-  --dark-blue: #135cc5;
+  --light-cherry: #fffbf5;
+  --dark-cherry: #3b1d26;
   --light-red: #f87171;
   --dark-red: #dc2626;
   --gray: #252c30;
 
   /*Intentions*/
-  --primary: var(--light-blue);
-  --secondary: var(--dark-blue);
+  --primary: var(--light-cherry);
+  --secondary: var(--dark-cherry);
 
   /*Typography*/
   --h1: 7.594rem;
@@ -29,6 +29,7 @@ body,
 }
 h1 {
   font-size: var(--h1);
+  color: var(--secondary);
 }
 h2 {
   font-size: var(--h2);
@@ -52,10 +53,17 @@ h4,
 h5 {
   text-align: center;
 }
-
 body {
   background-color: var(--primary);
 }
-.btn {
+button {
   font-size: var(--h3);
+  margin: 2rem auto;
+  width: 7%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  border: solid 0.4rem #3b1d26;
+  border-radius: 1rem;
 }
