@@ -7,12 +7,18 @@ import {DOMSelectors} from "./DOM";
 cardArr.forEach((el) => {
     DOMSelectors.display.insertAdjacentHTML(
         "beforeend",
-        `<div class="display-card">
+        `<div class="display-card class="one">
             <img class="display-img" src="${el.img}"/>
             <h2 class="display-name">${el.name}</h2>
             <h3 class="display-price">${el.price}</h3>
         </div>`
     )
-})
+});
+
+DOMSelectors.blueBtn.addEventListener("click", blue)
+
+function blue() {
+    if (cardArr.mainColor);
+};
 
 //use extra js and css files to have certain code in place where it will be more easily accessible

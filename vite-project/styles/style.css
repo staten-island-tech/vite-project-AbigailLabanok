@@ -5,6 +5,7 @@ body,
   font-size: 62.5%;
   padding: 0;
   margin: 0;
+  text-align: center;
   font-family: "Bitter", serif;
 }
 :root {
@@ -26,7 +27,7 @@ body,
 
   /*Typography*/
   --h1: 7.594rem;
-  --h2: 5.063rem;
+  --h2: 4.813rem;
   --h3: 3.375rem;
   --h4: 2.25rem;
   --h5: 1.5rem;
@@ -64,7 +65,7 @@ button,
 button:link,
 button:visited {
   font-size: var(--h3);
-  margin: 2rem auto;
+  margin: 2rem 2rem;
   width: 7%;
   justify-content: space-around;
   align-items: center;
