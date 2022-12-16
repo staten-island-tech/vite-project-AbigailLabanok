@@ -18,19 +18,19 @@ cardArr.forEach((el) => {
 DOMSelectors.blueBtn.addEventListener("click", function () {
   if (document.body.classList.contains("regularColor" || "purpleColor")) {
     document.body.classList.add("blueColor");
-    document.body.classList.remove("regularColor" || "purpleColor");
+    document.body.classList.remove("regularColor" && "purpleColor");
   } else {
-    document.body.classList.add("regularColor");
+    document.body.classList.add("regularColor" || "purpleColor");
     document.body.classList.add("blueColor");
   }
 });
 
 DOMSelectors.purpleBtn.addEventListener("click", function () {
-  if (document.body.classList.contains("regularColor")) {
+  if (document.body.classList.contains("regularColor" || "blueColor")) {
     document.body.classList.add("purpleColor");
-    document.body.classList.remove("regularColor");
+    document.body.classList.remove("regularColor" && "blueColor");
   } else {
-    document.body.classList.add("regularColor");
+    document.body.classList.add("regularColor" || "blueColor");
     document.body.classList.add("purpleColor");
   }
 });
