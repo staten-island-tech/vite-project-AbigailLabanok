@@ -15,10 +15,13 @@ body,
   --light-cherry: #fff7eb;
   --mid-cherry: #68273b;
   --dark-cherry: #3b1d26;
-  --light-red: #f87171;
-  --dark-red: #dc2626;
+  --light-blue: #ADD8E6;
+  --mid-blue: #4682B4;
+  --dark-blue: #191970;
+  --light-purple: #E6E6FA;
+  --mid-purple: #702963;
+  --dark-purple: #483248;
   --gray: #252c30;
-  --light-violet: #f2e8f7;
 
   /*Intentions*/
   --primary: var(--light-cherry);
@@ -31,6 +34,21 @@ body,
   --h3: 3.375rem;
   --h4: 2.25rem;
   --h5: 1.5rem;
+}
+.regularColor{
+  --primary: var(--light-cherry);
+  --secondary: var(--dark-cherry);
+  --tertiary: var(--mid-cherry);
+}
+.blueColor{
+  --primary: var(--light-blue);
+  --secondary: var(--dark-blue);
+  --tertiary: var(--mid-blue);
+}
+.purpleColor{
+  --primary: var(--light-purple);
+  --secondary: var(--dark-purple);
+  --tertiary: var(--mid-purple);
 }
 h1 {
   font-size: var(--h1);
@@ -72,7 +90,7 @@ button:visited {
   flex-direction: row;
   border: solid 0.4rem var(--secondary);
   border-radius: 2rem;
-  background-color: var(--primary);
+  background-color: var(--white);
   display: inline-block;
   transition: all 0.2s;
 }
