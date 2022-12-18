@@ -15,29 +15,59 @@ cardArr.forEach((el) => {
   );
 });
 
-DOMSelectors.blueBtn.addEventListener("click", function () {
-  if (document.body.classList.contains("regularColor" || "purpleColor")) {
-    document.body.classList.add("blueColor");
-    document.body.classList.remove("regularColor" && "purpleColor");
-  } else {
-    document.body.classList.add("regularColor" || "purpleColor");
-    document.body.classList.add("blueColor");
-  }
-});
+DOMSelectors.blueBtn.addEventListener("click", blue);
 
-DOMSelectors.purpleBtn.addEventListener("click", function () {
-  if (document.body.classList.contains("regularColor" || "blueColor")) {
-    document.body.classList.add("purpleColor");
-    document.body.classList.remove("regularColor" && "blueColor");
-  } else {
-    document.body.classList.add("regularColor" || "blueColor");
-    document.body.classList.add("purpleColor");
-  }
-});
+DOMSelectors.purpleBtn.addEventListener("click", purple);
 
-/* DOMSelectors.blueBtn.addEventListener("click", blue)
+DOMSelectors.allBtn.addEventListener("click", all);
 
 function blue() {
+  if (
+    document.body.classList.contains("regularColor") ||
+    document.body.classList.contains("purpleColor") ||
+    document.body.classList.contains("blueColor")
+  ) {
+    document.body.classList.add("blueColor");
+    document.body.classList.remove("regularColor");
+    document.body.classList.remove("purpleColor");
+  } else {
+    document.body.classList.add("regularColor");
+    document.body.classList.add("blueColor");
+    document.body.classList.add("purpleColor");
+  }
+}
+
+function purple() {
+  if (
+    document.body.classList.contains("regularColor") ||
+    document.body.classList.contains("blueColor") ||
+    document.body.classList.contains("purpleColor")
+  ) {
+    document.body.classList.add("purpleColor");
+    document.body.classList.remove("regularColor");
+    document.body.classList.remove("blueColor");
+  } else {
+    document.body.classList.add("regularColor");
+    document.body.classList.add("purpleColor");
+    document.body.classList.add("blueColor");
+  }
+}
+
+function all() {
+  if (
+    document.body.classList.contains("purpleColor") ||
+    document.body.classList.contains("blueColor") ||
+    document.body.classList.contains("regularColor")
+  ) {
+    document.body.classList.add("regularColor");
+    document.body.classList.remove("purpleColor");
+    document.body.classList.remove("blueColor");
+  } else {
+    document.body.classList.add("regularColor");
+  }
+}
+
+/*function blue() {
     cardArr
     .filter((color) => color.mainColor.includes("blue"))
     .forEach((el) => {

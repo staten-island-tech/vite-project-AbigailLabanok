@@ -35,17 +35,17 @@ body,
   --h4: 2.25rem;
   --h5: 1.5rem;
 }
-.regularColor{
+.regularColor {
   --primary: var(--light-cherry);
   --secondary: var(--dark-cherry);
   --tertiary: var(--mid-cherry);
 }
-.blueColor{
+.blueColor {
   --primary: var(--light-blue);
   --secondary: var(--dark-blue);
   --tertiary: var(--mid-blue);
 }
-.purpleColor{
+.purpleColor {
   --primary: var(--light-purple);
   --secondary: var(--dark-purple);
   --tertiary: var(--mid-purple);
