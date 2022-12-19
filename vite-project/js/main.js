@@ -67,6 +67,21 @@ function purple() {
     document.body.classList.add("purpleColor");
     document.body.classList.add("blueColor");
   }
+
+  DOMSelectors.display.style.display = "none";
+
+  cardArr
+    .filter((card) => card.mainColor.includes("purple"))
+    .forEach((el) => {
+      DOMSelectors.display3.insertAdjacentHTML(
+        "beforeend",
+        `<div class="display-card class="one">
+         <img class="display-img" src="${el.img}"/>
+         <h2 class="display-name">${el.name}</h2>
+         <h3 class="display-price">${el.price}</h3>
+      </div>`
+      );
+    });
 }
 
 function all() {
@@ -81,6 +96,19 @@ function all() {
   } else {
     document.body.classList.add("regularColor");
   }
+
+  DOMSelectors.display.style.display = "none";
+
+  cardArr.forEach((el) => {
+    DOMSelectors.display2.insertAdjacentHTML(
+      "beforeend",
+      `<div class="display-card class="one">
+         <img class="display-img" src="${el.img}"/>
+         <h2 class="display-name">${el.name}</h2>
+         <h3 class="display-price">${el.price}</h3>
+      </div>`
+    );
+  });
 }
 
 /*function blue() {
