@@ -8,10 +8,10 @@ cardArr.forEach((el) => {
   DOMSelectors.display.insertAdjacentHTML(
     "beforeend",
     `<div class="display-card class="one">
-            <img class="display-img" src="${el.img}"/>
-            <h2 class="display-name">${el.name}</h2>
-            <h3 class="display-price">${el.price}</h3>
-        </div>`
+         <img class="display-img" src="${el.img}"/>
+         <h2 class="display-name">${el.name}</h2>
+         <h3 class="display-price">${el.price}</h3>
+      </div>`
   );
 });
 
@@ -35,6 +35,19 @@ function blue() {
     document.body.classList.add("blueColor");
     document.body.classList.add("purpleColor");
   }
+
+  cardArr
+    .filter((card) => card.mainColor.includes("blue"))
+    .forEach((el) => {
+      DOMSelectors.display.insertAdjacentHTML(
+        "beforeend",
+        `<div class="display-card class="one">
+         <img class="display-img" src="${el.img}"/>
+         <h2 class="display-name">${el.name}</h2>
+         <h3 class="display-price">${el.price}</h3>
+      </div>`
+      );
+    });
 }
 
 function purple() {
