@@ -98,7 +98,8 @@ button:hover {
   transform: translateY(-2px);
   box-shadow: 0 10px 1rem rgba(0, 0, 0, 0.2);
 }
-.display {
+.display,
+.display2 {
   display: flex;
   justify-content: space-around;
   align-items: center;

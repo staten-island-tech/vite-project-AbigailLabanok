@@ -22,6 +22,7 @@ DOMSelectors.purpleBtn.addEventListener("click", purple);
 DOMSelectors.allBtn.addEventListener("click", all);
 
 function blue() {
+  console.log("inside blue");
   if (
     document.body.classList.contains("regularColor") ||
     document.body.classList.contains("purpleColor") ||
@@ -36,10 +37,12 @@ function blue() {
     document.body.classList.add("purpleColor");
   }
 
+  DOMSelectors.display.style.display = "none";
+
   cardArr
     .filter((card) => card.mainColor.includes("blue"))
     .forEach((el) => {
-      DOMSelectors.display.insertAdjacentHTML(
+      DOMSelectors.display2.insertAdjacentHTML(
         "beforeend",
         `<div class="display-card class="one">
          <img class="display-img" src="${el.img}"/>
