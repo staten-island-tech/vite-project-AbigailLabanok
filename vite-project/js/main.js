@@ -15,7 +15,7 @@ cardArr.forEach((el) => {
   );
 });
 
-DOMSelectors.blueBtn.addEventListener("click", blue, { once: true });
+DOMSelectors.blueBtn.addEventListener("click", blue);
 
 DOMSelectors.purpleBtn.addEventListener("click", purple);
 
