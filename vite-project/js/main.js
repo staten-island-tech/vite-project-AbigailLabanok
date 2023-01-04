@@ -22,6 +22,8 @@ DOMSelectors.purpleBtn.addEventListener("click", purple);
 DOMSelectors.allBtn.addEventListener("click", all);
 
 function blue() {
+  DOMSelectors.display.innerHTML = "";
+
   if (
     document.body.classList.contains("regularColor") ||
     document.body.classList.contains("purpleColor") ||
@@ -36,12 +38,13 @@ function blue() {
     document.body.classList.add("purpleColor");
   }
 
-  DOMSelectors.display.style.display = "none";
+/*   DOMSelectors.display.style.display = "none"; */
+DOMSelectors.display.innerHTML = "";
 
   cardArr
     .filter((card) => card.mainColor.includes("blue"))
     .forEach((el) => {
-      DOMSelectors.display2.insertAdjacentHTML(
+      DOMSelectors.display.insertAdjacentHTML(
         "beforeend",
         `<div class="display-card class="one">
          <img class="display-img" src="${el.img}"/>
@@ -53,6 +56,8 @@ function blue() {
 }
 
 function purple() {
+  DOMSelectors.display.innerHTML = "";
+
   if (
     document.body.classList.contains("regularColor") ||
     document.body.classList.contains("blueColor") ||
@@ -67,12 +72,12 @@ function purple() {
     document.body.classList.add("blueColor");
   }
 
-  DOMSelectors.display.style.display = "none";
+/*   DOMSelectors.display.style.display = "none"; */
 
   cardArr
     .filter((card) => card.mainColor.includes("purple"))
     .forEach((el) => {
-      DOMSelectors.display3.insertAdjacentHTML(
+      DOMSelectors.display.insertAdjacentHTML(
         "beforeend",
         `<div class="display-card class="one">
          <img class="display-img" src="${el.img}"/>
@@ -84,6 +89,8 @@ function purple() {
 }
 
 function all() {
+  DOMSelectors.display.innerHTML = "";
+
   if (
     document.body.classList.contains("purpleColor") ||
     document.body.classList.contains("blueColor") ||
@@ -96,10 +103,11 @@ function all() {
     document.body.classList.add("regularColor");
   }
 
-  DOMSelectors.display.style.display = "none";
-
+/*   DOMSelectors.display.style.display = "none"; */
+ 
+  DOMSelectors
   cardArr.forEach((el) => {
-    DOMSelectors.display2.insertAdjacentHTML(
+    DOMSelectors.display.insertAdjacentHTML(
       "beforeend",
       `<div class="display-card class="one">
          <img class="display-img" src="${el.img}"/>
