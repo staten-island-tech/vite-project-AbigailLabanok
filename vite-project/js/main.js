@@ -15,14 +15,13 @@ cardArr.forEach((el) => {
   );
 });
 
-DOMSelectors.blueBtn.addEventListener("click", blue);
+DOMSelectors.blueBtn.addEventListener("click", blue, { once: true });
 
 DOMSelectors.purpleBtn.addEventListener("click", purple);
 
 DOMSelectors.allBtn.addEventListener("click", all);
 
 function blue() {
-  console.log("inside blue");
   if (
     document.body.classList.contains("regularColor") ||
     document.body.classList.contains("purpleColor") ||
@@ -109,20 +108,6 @@ function all() {
       </div>`
     );
   });
-}
+};
 
-/*function blue() {
-    cardArr
-    .filter((color) => color.mainColor.includes("blue"))
-    .forEach((el) => {
-        DOMSelectors.display.insertAdjacentHTML(
-            "beforeend",
-            `<div class="display-card class="one">
-                <img class="display-img" src="${el.img}"/>
-                <h2 class="display-name">${el.name}</h2>
-                <h3 class="display-price">${el.price}</h3>
-            </div>`
-        )
-    })
-} */
 //use extra js and css files to have certain code in place where it will be more easily accessible
